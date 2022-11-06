@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SUDOKU </title>
+    <script src="jQuerry.js"></script>
+    <link rel = "icon" href = c:\Users\dhaou\OneDrive\Bureau\soduko1\soduko\download.jpg
+           type = "image/x-icon">
+    <link rel="stylesheet" href="soduko1.css">
+</head>
+<body>
+
+    <h1>SUDOKO GAME</h1>
+
+    <div id="main">
+        <div id="row1">
+           <div id="box1" class="box"></div>
+           <div id="box2" class="box"></div>
+           <div id="box3" class="box"></div> 
+        </div>
+        <div id="row2">
+            <div id="box4" class="box"></div>
+            <div id="box5" class="box"></div>
+            <div id="box6" class="box"></div>
+        </div>
+        <div id="row3">
+            <div id="box7" class="box"></div>
+            <div id="box8" class="box"></div>
+            <div id="box9" class="box"></div>
+        </div>
+    </div> 
+
+    <button type="button" id="start" onclick="start()">START</button>
+    <button type="button" id="replay" onclick="replay()">NEW GAME</button>
+    <button type="button" id="answer" onclick="answer()">ANSWER</button>
+
+    <div id="game_type">
+        <h3>CHOOSE LEVEL:</h3>
+        <label><input type="radio" id="easy" class="label" name="diff_level" checked> Easy</label>
+        <label><input type="radio" id="medium" class="label" name="diff_level" > Medium</label>
+        <label><input type="radio" id="hard" class="label" name="diff_level"> Hard</label>
+       
+        
+        <button type="button" id="help" onclick="help()">HOW TO PLAY</button>
+
+    </div>
+<h2>
+    
+</h2>
+<div id="lives">YOU HAVE ONLY <span id="rem_live">3</span> LIVES</div>
+
+    
+
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
